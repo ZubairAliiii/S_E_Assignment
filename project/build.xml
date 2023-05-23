@@ -1,0 +1,17 @@
+<project>
+<target name="compile">
+<mkdir dir="build/classes"/>
+<javac srcdir="src/mainpkg" destdir="build/classes"/>
+</target>
+
+<target name="jar">
+<jar destfile="build/Main.jar" basedir="build/classes">
+<manifest>
+<attribute name="Main-class" value="mainpkg.ArrayMainProgram"/>
+</manifest>
+</jar>
+</target>
+<target name="run">
+<java jar="build/Main.jar" fork="true"/>
+</target>
+</project>
