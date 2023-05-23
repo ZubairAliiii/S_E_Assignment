@@ -7,7 +7,7 @@ public class ArrayMainProgram {
     String yn;
     Scanner src = new Scanner(System.in);
 
-    public void MainMenu() {
+    public void MainMenu(){
         System.out.println("_______________________");
         System.out.println("1-Matrix Addition:\n______________________");
         System.out.println("2-Matrix Subtraction:\n_____________________");
